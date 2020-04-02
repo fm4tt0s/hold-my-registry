@@ -11,15 +11,13 @@ https://docs.docker.com/registry/deploying/
 
 ## Requirements
 
-```OpenSSL
-```
+    OpenSSL
 
 ## Remarks
 
 This will generate a set of files that matters to registry and node machines on a folder - as of ./output.$$ - where $$ is the PID of current run. Registry box will use server certs, whereas node needs only the client certificate - usually placed on:
 
-```/etc/docker/certs.d/[registry_url]/ca.crt
-```
+    /etc/docker/certs.d/[registry_url]/ca.crt
 
 ## How To
 
