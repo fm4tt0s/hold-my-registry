@@ -39,9 +39,9 @@ You will end up with three files that really matters to your secure registry boo
 Once you got the certificate files, copy it all to the volume mapped to container registry /certs folder and run your secure registry as:
 
     docker run -d \
-    --env REGISTRY_HTTP_TLS_CERTIFICATE=/certs/cert.pem \
-    --env REGISTRY_HTTP_TLS_KEY=/certs/key.pem \
-    --env REGISTRY_HTTP_TLS_CLIENTCAS_0=/certs/ca.pem \
+    --env REGISTRY_HTTP_TLS_CERTIFICATE=/certs/CERTIFICATE.pem \
+    --env REGISTRY_HTTP_TLS_KEY=/certs/KEY.pem \
+    --env REGISTRY_HTTP_TLS_CLIENTCAS_0=/certs/CLIENTCA.crt \
     --restart=always \
     --name registry-local \
     -p 5000:5000 \
