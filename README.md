@@ -46,7 +46,7 @@ Once you got the certificate files, copy it all to the volume mapped to containe
     --name registry-local \
     -p 5000:5000 \
     --volume "$(pwd)"/certs:/certs \
-    --volume /data/n01/production/registry:/var/lib/registry \
+    --volume "$(pwd)"/registry:/var/lib/registry \
     registry:2
 
 ## Live
