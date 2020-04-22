@@ -18,6 +18,7 @@
 #
 # reqs      :
 #       openssl
+#       bash (for sakes)
 #
 
 [[ -z "${BASH}" ]] && echo "ERROR: Run me from BASH!" >&2 && exit 1
