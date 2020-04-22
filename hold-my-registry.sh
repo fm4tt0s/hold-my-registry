@@ -20,7 +20,7 @@
 #       openssl
 #
 
-#set -x
+[[ -z "${BASH}" ]] && echo "ERROR: Run me from BASH!" >&2 && exit 1
 [[ ! -x $(command -v openssl) ]] && echo "ERROR: OpenSSL is not installed!" >&2 && exit 1
 
 # global vars
